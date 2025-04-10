@@ -1,0 +1,363 @@
+%Plantilla Memoria Técnica:
+%Modificada por: Brenda Mariana Casillas González
+%Última Modificación: 02-01-2023
+
+%------------------------------CONFIGURACION DEL DOCUMENTO
+
+\documentclass[12pt,letterpaper,spanish, xcolor=table]{report}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{epsfig}
+\usepackage{booktabs}
+\usepackage{graphics}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[numbers]{natbib}
+\usepackage[hyphens]{url}
+\usepackage{enumerate}
+
+\newenvironment{dedication}{\newpage\large\null\em\vskip1in}%
+{\vfill}
+
+\topmargin -1 in \oddsidemargin 0in \evensidemargin 0in
+\textwidth 6.5in
+\textheight 9in \pagestyle{myheadings}
+
+% -----------------------------------INICIO DEL DOCUMENTO  ---------------------------------------------------------------
+\begin{document}
+
+
+% Para la elaboración de esta memoria técnica se debe usar un editor profesional que soporte Latex, como recomendación se puede usar el WinEdt.
+
+% El resultado que se sube a la plataforma debe ser en formato PDF
+
+% Es importante mencionar que la redacción de este documento se debe hacer en tercera persona, cuidando escrupulosamente la ortografía, redacción y contenido, evitando el uso y abuso de adjetivos.
+
+
+% ----------------------------------- CONTRAPORTADA -------------------------------------------------------------------------
+%Se deben modificar los datos de la empresa, proyecto, asesores y alumnos
+
+\thispagestyle{empty}
+
+\begin{table}[ht]
+  \centering
+    \begin{tabular}{rr}
+        \begin{minipage}[b]{0.05\linewidth}
+        \hbox{\psfig{file=logoUTZMG.jpg,height=1in,width=.8in}}
+        \end{minipage}
+    &
+    \begin{minipage}[b]{.8\linewidth}
+        \begin{center}
+            \large{UNIVERSIDAD TECNOLÓGICA \\ DE LA ZONA METROPOLITANA DE GUADALAJARA}\\
+        \end{center}
+    \end{minipage}
+
+    \end{tabular}%
+\end{table}%
+
+\begin{center}
+
+\large{\textbf{MEMORIA TÉCNICA REALIZADA EN:}}
+ \\  Ayuntamiento de Tlajomulco de Zuñiga
+
+%%Logo de la empresa
+\centerline{\hbox{\psfig{file=logoEmpresa.jpg,height=1.2in,width=1.2in}}}
+
+\large{\textbf{PROYECTO:} Escriba el nombre de proyecto}
+
+\vspace{0.1in}
+\large{\textbf{PARA OBTENER EL GRADO DE:}}
+
+\large{Técnico Superior Universitario (TSU) en:}
+\vspace{0.05in}
+
+\large{TECNOLOGÍAS DE LA INFORMACIÓN, ÁREA DESARROLLO DE SOFTWARE MULTIPLATAFORMA }
+\\
+\large{PRESENTADO POR:}
+
+
+Brenda Mariana Casillas González %(Empezando con el nombre  y después apellidos)
+
+
+Nombre del alumno 2 %(Empezando con el nombre  y después apellidos)
+
+\vspace{0.2in}
+
+\begin{tabular}{cc}
+    \vspace{0.2in}
+    \textbf{ASESOR INDUSTRIAL} & \textbf{ASESOR ACADÉMICO} \\
+
+    Escriba el nombre del asesor industrial & Escriba el nombre del asesor académico \\
+    \multicolumn{2}{c}{\textbf{COORDINADOR DE CARRERA}
+    \vspace{0.2in}
+    } \\
+
+    \multicolumn{2}{c}{
+            Ing. Lizbeth Noriega Gutierrez }
+    \end{tabular}
+
+\end{center}
+%\vspace{0.1in}
+\begin{flushright}\small{ TLAJOMULCO DE ZUÑIGA, JALISCO, ABRIL DEL 2023} \end{flushright}
+
+\newpage
+
+
+% ------------------------------  PORTADA -----------------------------------------------------
+%Se deben modificar los datos de la empresa, proyecto y alumnos
+
+
+\thispagestyle{empty}
+
+
+\begin{center}
+
+ \begin{minipage}[b]{.9\linewidth}
+    \begin{center}
+        \vspace{0.2in}
+        \large{UNIVERSIDAD TECNOLÓGICA DE LA ZONA \\METROPOLITANA DE GUADALAJARA}\\
+        \large{DIRECCIÓN DE DESARROLLO Y GESTIÓN DE SOFTWARE}\\
+    \end{center}
+\end{minipage}
+\vspace{0.3in}
+
+
+\centerline{\hbox{\psfig{file=logoUTZMG.jpg,height=2.2in,width=1.7in}}}
+
+\LARGE{\textbf{\textsc{escriba el nombre del proyecto}} }
+
+\vspace{0.3in}
+\large{\textbf{MEMORIA TÉCNICA REALIZADA EN:}}
+ \\  \textsc{Escriba el nombre de la empresa}
+
+\vspace{0.2in}
+\large{\textbf{PARA OBTENER EL GRADO DE:}}
+
+\large{Técnico Superior Universitario (TSU) en:}
+
+
+\large{TECNOLOGÍAS DE LA INFORMACIÓN\\Área, DESARROLLO DE SOFTWARE MULTIPLATAFORMA }
+\\
+
+\vspace{0.2in}
+\large{PRESENTADO POR:}
+
+
+\textsc{Nombre del alumno} 1 %(Empezando con el nombre  y después apellidos)
+
+
+\textsc{Nombre del alumno} 2 %(Empezando con el nombre  y después apellidos)
+
+\vspace{0.3in}
+\small{ ABRIL 2023}
+\end{center}
+%\vspace{0.1in}
+
+
+\newpage
+
+
+
+% -------------------------------------- DEDICATORIA   ---------------------
+% Esta sección es opcional, pero se recomienda que se ponga, se puede redactar hasta el final y tratar que no sea mayor a una cuartilla.
+
+        \thispagestyle{empty}
+        \addcontentsline{toc}{chapter}{Agradecimientos}
+
+        \begin{dedication}
+           Agradezco a todas las personas ....
+        \end{dedication}
+
+
+%--------------------------------         ÍNDICE
+
+
+\tableofcontents
+
+
+% --------------------------------------- CAPÍTULOS DEL DOCUMENTO  ----------------------------------------
+% ____________________________________________________________________________________
+
+\pagenumbering{arabic}
+\oddsidemargin 0.2in \textwidth 6.5in \topmargin -0.25in
+\textheight 9in \pagestyle{myheadings}
+
+\newpage
+
+% CAPITULO INTRODUCCIÓN. Enmarca y situa el trabajo a realizar. Tiene por objeto proporcionar una visión general del documento.
+%____________________________________________________________________________________________________________________
+
+
+\chapter{Introducción}
+\newpage
+
+
+Esta es la introdución jshdjhsdjkfhsdjk kjsdlkfjskad jdhshdfsdflksk, jdfjsdhjjkdsjkf.
+Esta es la introdución jshdjhsdjkfhsdjk kjsdlkfjskad jdhshdfsdflksk, jdfjsdhjjkdsjkf.
+Esta es la introdución jshdjhsdjkfhsdjk kjsdlkfjskad jdhshdfsdflksk, jdfjsdhjjkdsjkf.
+Esta es la introdución jshdjhsdjkfhsdjk kjsdlkfjskad jdhshdfsdflksk, jdfjsdhjjkdsjkf.
+\\
+
+
+
+
+Esta es la introdución jshdjhsdjkfhsdjk kjsdlkfjskad jdhshdfsdflksk, jdfjsdhjjkdsjkf.
+
+
+% CAPITULO ANTECEDENTES Y DESCIPCIÓN DE LA EMPRESA. Tiene por objeto proporcionar una visión general del documento.
+%____________________________________________________________________________________________________________________
+
+\chapter{Antecedentes y Descripción de la Empresa}
+\newpage
+
+
+
+%Nota: Los puntos que siguen son una propuesta, pongan solo los puntos que apliquen en su empresa y que los permitan poner, también puede agregar otros puntos si lo cree conveniente.
+
+\section{Ubicación}
+
+La ubicación de la empresa la podemos observar en la figura vista \ref{a1}
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics*{latex.png}
+  \caption{Estimación Promedio}\label{a1}
+\end{figure}
+
+
+
+% Poner la dirección y un mapa que puede salir de maps.google.com
+
+\section{Misión}
+% Misión proporcionada por la empresa, se debe modificar la redacción a tercera persona.
+
+\section{Visión}
+% Visión proporcionada por la empresa, se debe modificar la redacción a tercera persona.
+
+
+\section{Organigrama}
+% Poner el organigrama proporcionado por la empresa o crear uno en caso de no contar con el.
+
+\section{Giro de la empresa}
+
+
+\section{Historia}
+
+
+\newpage
+
+% --------------------------------   CAPITULO PROBLEMÁTICA   --------------------------------------
+%____________________________________________________________________________________________________________________
+
+
+
+\chapter{Problemática y Descripción del Proyecto}
+\newpage
+
+% En esta sección se deberá redactar un planteamiento de la problemática que se pretende resolver.
+\section{Problemática}
+
+$\subseteq$  \textsc{\textbf{Hola Mundo}}
+
+
+\begin{enumerate}[RF 1.]
+  \item Uno
+  \item Dos
+  \item Tres
+\end{enumerate} Ver en \ref{LiAngel}
+
+%Escribir un resumen de su proyecto en donde se hable del aspecto económico, operativo, técnico, humano, objetivos, etc.
+\section{Descripción del Proyecto}
+
+
+
+%Describir cual es el objetivo general que persigue el proyecto.
+\subsection{Objetivo General}
+
+%Describir cuales son los objetivos específicos que persigue el proyecto. Mínimo deben ser dos y estos deben abonar al objetivo general
+\subsection{Objetivos Específicos}
+\cite{buffett84}
+
+%Describir de manera detallada las actividades para el desarrollo de la estadía y/o proyecto (Diagrama de Gantt).
+\subsection{Planeación}
+
+
+
+%CAPITULO MARCO TEÓRICO: bases teorícas del proyecto. conceptos básicos y antecedentes o información existente.
+%____________________________________________________________________________________________________________________
+
+\chapter{Marco Teórico}
+\newpage
+
+\section{MongoDB}
+
+Como lo dijo \citeauthor{ArBre}, \citeyear  Acelere la innovación a escala, aborde las necesidades de datos de cualquier aplicación rápidamente, acelere el tiempo de obtención de valor y reduzca la complejidad seleccionando y eligiendo lo que necesita de una colección integrada de servicios de infraestructura de datos y bases de datos.  \cite{mongodb} es un formato válido, pero no es APA que solicitan en la memoria,  para cumplir con la norma podemos hacer la referencia de esta manera (\citeauthor{mongodb}, \citeyear{mongodb}) y en (\citeauthor{ArBre}, \citeyear{ArBre})
+
+
+
+%CAPITULO DESARROLLO DEL PROYECTO: procedimiento o descripción de las actividades realizadas, como es un desarrollo es importante
+%____________________________________________________________________________________________________________________
+
+\chapter{Desarrollo del Proyecto}
+\newpage
+
+\section{Requerimientos}
+
+\section{Análisis y Diseño}
+
+\section{Implementación}
+
+\section{Pruebas}
+
+
+% CAPITULO RESULTADOS(estatus del proyecto y posibles mejoras) Y CONCLUSIONES(problemas presentados, costos, restrasos, cumplimiento de objetivos, etc)
+%____________________________________________________________________________________________________________________
+
+\chapter{Resultados y Conclusiones}
+\newpage
+
+\section{Resultados}
+
+
+\section{Conclusiones}
+
+
+% --------------------------  ANEXOS
+%____________________________________________________________________________________________________________________
+
+\newpage
+
+% APENDICE O ANEXO (infoemacion adicional que se quiera anexar o agregar
+% BIBLIOGRAFIA
+\appendix
+
+%\chapter{Bibliograf\check{}ía}
+%\bibliographystyle{apalike}
+\bibliographystyle{unsrtnat}
+
+\begin{itemize}
+  \item A
+  \item B
+  \item C
+\end{itemize}
+
+
+\bibliography{biblio}
+
+
+\newpage
+\chapter{Glosario}
+
+\begin{description}
+  \item[Asesor Académico] Persona encargada de regañar a los alumnos
+\end{description}
+
+%Otro apendice
+
+
+
+\end{document} 
