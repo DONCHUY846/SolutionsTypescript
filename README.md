@@ -6,7 +6,7 @@ Here you can see my solutions.
 
 
 
-## Authors
+## Author
 
 - [@DONCHUY846](https://github.com/donchuy846)
 
